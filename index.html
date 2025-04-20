@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HỖ TRỢ KỸ THUẬT TOSHIBA/COMFEE</title>
   <style>
+    /* Căn giữa toàn bộ nội dung */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -14,30 +15,47 @@
       align-items: center;
       height: 100vh; /* Chiều cao toàn màn hình */
       background-color: #f0f0f0; /* Màu nền (tuỳ chọn) */
-      flex-direction: column; /* Sắp xếp theo chiều dọc */
     }
+
+    /* Container để chứa nội dung */
+    .container {
+      text-align: center; /* Căn giữa nội dung bên trong container */
+    }
+
+    /* Định dạng cho input */
     input {
       width: 300px;
       padding: 10px;
       margin-bottom: 20px;
     }
+
+    /* Định dạng cho liên kết */
     a {
       display: block;
       margin: 10px 0;
       color: blue;
       text-decoration: none;
     }
+
+    /* Định dạng cho hình ảnh */
     img {
       margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <!-- HỖ TRỢ KỸ THUẬT TOSHIBA/COMFEE -->
-  <img src="Bảo hành.png" alt="TSB" width="300">
-  <h1>Tìm kiếm video trên kênh YouTube</h1>
-  <input type="text" id="search" placeholder="Nhập tên video...">
-  <div id="results"></div>
+  <div class="container">
+    <!-- HỖ TRỢ KỸ THUẬT TOSHIBA/COMFEE -->
+    <img src="Bảo hành.png" alt="TSB" width="300">
+    <h1>Tìm kiếm video trên kênh YouTube</h1>
+    <input type="text" id="search" placeholder="Nhập tên video...">
+    <div id="results">
+      <a href="#">Comfee - Máy Lạnh - Đấu nối dây nguồn</a>
+      <a href="#">TOSHIBA - Máy giặt - Vệ Sinh Van Cấp</a>
+      <a href="#">Comfee - Máy lạnh - Chọn Follow Me</a>
+      <a href="#">TOSHIBA - Tủ Đông - Lắp Bánh xe, Tay Cầm</a>
+    </div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
