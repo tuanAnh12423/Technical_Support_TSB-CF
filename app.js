@@ -24,5 +24,6 @@ const videos = [
       link.textContent = video.name;
       resultsDiv.appendChild(link);
     });
+    
   }
  });
