@@ -24,19 +24,35 @@
       max-width: 400px; /* Giới hạn chiều rộng tối đa */
     }
 
-    /* Định dạng cho ô lựa chọn và ô nhập liệu */
-    .input-group {
+    /* Định dạng cho ô nhập liệu */
+    .input-format {
       display: flex; /* Sắp xếp các phần tử theo chiều ngang */
       flex-direction: column; /* Sắp xếp theo chiều dọc */
       align-items: center; /* Căn giữa theo chiều dọc */
       margin-bottom: 20px; /* Khoảng cách bên dưới */
     }
-  
-    select, input {
+    input {
+      text-align: center;
       width: 100%; /* Chiều rộng đầy đủ */
       padding: 10px; /* Khoảng cách bên trong */
       margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
       font-size: 16px; /* Kích thước chữ dễ đọc */
+    }
+
+    /* Định dạng cho ô lựa chọn */
+
+    .select-format{
+      display: flex; 
+      flex-direction: column-reverse; 
+      align-items: flex-start; 
+    }
+
+    select{
+      text-align: center;
+      width: 40%;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
     }
 
     /* Định dạng cho hình ảnh */
@@ -44,8 +60,6 @@
       margin-bottom: 20px;
       max-width: 100%; /* Đảm bảo hình ảnh không vượt quá màn hình */
       height: auto; /* Tự động điều chỉnh chiều cao */
-
-    /*Định dạng cho Liên kết trên góc trái*/
     }
   </style>
 </head>
@@ -53,18 +67,19 @@
   
   <div class="container">
     <!-- HỖ TRỢ KỸ THUẬT TOSHIBA/COMFEE -->
-    <img src="/image/Bảo hành.png" alt="TSB" width="300">
+    <img src="/Bảo hành.png" alt="TSB" width="300">
     <h1>Tìm kiếm video trên kênh YouTube</h1>
-    
+  
     <!-- Ô lựa chọn và ô nhập liệu -->
-    <div class="input-group">
+    <div class="select-format">
       <select id="brand">
         <option value="TOSHIBA">TOSHIBA</option>
         <option value="Comfee">Comfee</option>
       </select>
-      <input type="text" id="search" placeholder="Nhập tên video...">
     </div>
-    
+    <div class = "input-format">
+        <input type="text" id="search" placeholder="Nhập tên video...">
+    </div>
     <div id="results">
       <!-- Kết quả tìm kiếm sẽ hiển thị ở đây -->
     </div> 
